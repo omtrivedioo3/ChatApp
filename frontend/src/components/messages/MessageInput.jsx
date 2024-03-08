@@ -8,7 +8,7 @@ function MessageInput() {
 
   const handlesubmit = async (e) =>{
         e.preventDefault();
-        console.log(message)
+      //  console.log(message)
 
         if(!message)return;
         await SendMessage(message);

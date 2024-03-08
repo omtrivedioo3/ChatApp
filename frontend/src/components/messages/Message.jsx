@@ -6,12 +6,11 @@ import { extractTime } from '../../utils/ExtractTime'
 function Message({message1}) {
    const {authuser} = useAuthContext()
    const {selectedConverstion}=UseConversation()
- console.log("auth",authuser);
-  //  console.log("sle",selectedConverstion);
- // console.log("mi1",message1)
+
+  
   const formatedDate = extractTime(message1.createdAt || message1.newMessage.createdAt );
    const fromMe = ((message1.senderId || message1.newMessage.senderId) === authuser.data.id)
-   //console.log("IM",fromMe)
+   
    const chatClassName = fromMe ? 'chat-end':'chat-start';
    const profilePic = fromMe ? authuser.data.profilepicture : selectedConverstion?.profilepic;
    const bgColor = fromMe ? 'bg-red-700' : '';

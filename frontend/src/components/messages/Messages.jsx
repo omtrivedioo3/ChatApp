@@ -8,7 +8,7 @@ import UseListenMessages from '../../hooks/UseListenMessages';
 function Messages() {
   const {messages,loading}  = UseGetMessage();
   const lastMessageRef = useRef();
- // console.log("mesiiii",messages);
+ 
   UseListenMessages();
 
   useEffect(()=>{
@@ -21,7 +21,7 @@ function Messages() {
   return (
     <div className='px-4 flex-1 overflow-auto'>
         {!loading && messages.length > 0 && messages.map((message) =>(
-         // console.log("1",message),
+        
             <div key = {message._id}
             ref={lastMessageRef}
             >
