@@ -12,7 +12,7 @@ const protectRoute = async (req,res,next)=>{
             })
         }
 
-        const decode = jwt.verify(token,process.env.JWT_SECRET);
+        const decode = jwt.verify(token,"omtrivedi");
         if(!decode)
         {
             return res.status(401).json({
