@@ -43,7 +43,6 @@ export const signup = async (req,res) =>{
             // generate jwt token here
             generateTokenAndSentCookies(newUser._id,res);
             await newUser.save();
-
             res.status(200).json({
                 message:'user created succesfully',
                 data:newUser,
@@ -96,8 +95,6 @@ export const login = async (req,res) =>{
             }
         });
          
-
-
     }catch(e){
         console.log(e); 
         return res.status(405).json({
