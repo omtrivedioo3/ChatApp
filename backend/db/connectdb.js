@@ -6,7 +6,7 @@ const connectDatabase = async () =>{
     try{
         // console.log("connect db successfully");
 
-        await mongoose.connect(process.env.MONGODB_URI);
+        await mongoose.connect("mongodb+srv://omtrivedioo3:URS1km3rfT2GeRxI@cluster0.be8vzog.mongodb.net/?retryWrites=true&w=majority");
         console.log("connect db successfully");
          
     }catch(e){
