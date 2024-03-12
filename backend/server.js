@@ -41,5 +41,6 @@ app.get("*",(req,res)=>{
 
 server.listen(PORT,()=> {
     connectDatabase(); 
+    // console.log(process.env.PORT)
     console.log(`server running on port ${PORT}`)
 })

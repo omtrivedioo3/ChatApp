@@ -11,7 +11,6 @@ const messageSchema = new mongoose.Schema({
         ref:"User",
         required:true
     },
-    chat: { type: mongoose.Schema.Types.ObjectId, ref: "Converstion" },
     message:{
         type:"string",
         required:true 

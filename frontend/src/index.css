@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-	background-image: url("../src/assets/bak3.jpg");
+	background-image: url("../src/assets/08-150ppp-01.jpg");
 	/* background: linear-gradient(rgba(217, 208, 208, 0.2), rgba(129, 53, 159, 0.2)); */
 	background-repeat: no-repeat;
 	background-size: cover;
